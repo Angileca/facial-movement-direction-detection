@@ -9,6 +9,7 @@ Created on Fri Feb 14 09:10:13 2020
 import cv2
 import numpy as np
 import dlib
+import os
 
 temp=0
 
@@ -24,7 +25,7 @@ def lent():
 
 cal = lambda x0, x1 : x1-x0
 
-pradect= dlib.shape_predictor('/home/ashrafi/Documents/Online work/Local work/68_face_landmarks.dat')
+pradect= dlib.shape_predictor(os.path.join(os.getcwd(),'68_face_landmarks.dat') )
 detect= dlib.get_frontal_face_detector()
 
 cap= cv2.VideoCapture(0)
