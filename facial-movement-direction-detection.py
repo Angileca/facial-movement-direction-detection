@@ -25,7 +25,7 @@ def lent():
 
 cal = lambda x0, x1 : x1-x0
 
-pradect= dlib.shape_predictor(os.path.join(os.getcwd(),'68_face_landmarks.dat') )
+pradect= dlib.shape_predictor(os.path.join(os.getcwd(),'.dat') )
 detect= dlib.get_frontal_face_detector()
 
 cap= cv2.VideoCapture(0)
